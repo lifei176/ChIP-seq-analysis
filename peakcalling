@@ -1,0 +1,3 @@
+for i in {sample1,sample2,sample3,sample4};do
+macs2 callpeak -c /last/Input.last.bam -t /last/${i}.last.bam -q 0.05 -f BAM -g hs -n ${i} --outdir /peak_files;
+done
